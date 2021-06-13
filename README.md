@@ -1,6 +1,8 @@
 # 最小 webpack プロジェクト
 
-## 使い方
+## 1. 使い方
+
+### 1-1. モジュールのインストール
 
 本ディレクトリにて以下コマンドを実行する。
 
@@ -8,21 +10,41 @@
 npm install
 ```
 
-## 手動での作り方
+### 1-2. 開発モードでの実行
 
-### 1.npm init する
+```dos
+npm run dev
+```
+
+http://localhost:8080 へアクセスして動作を確認する。  
+(js などを更新した時点でブラウザが更新されます)
+
+### 1-3 ビルド
+
+※工事中※
+以下コマンドにて dist 配下にコンパイルされる
+
+```dos
+npm run build
+```
+
+## 2. 手動での作り方
+
+以下本環境を手動にて作成した時の作り方を解説する。
+
+### 2-1.npm init する
 
 ```dos
 npm init -y
 ```
 
-### 2. webpack をインストールする
+### 2-2. webpack をインストールする
 
 ```dos
 npm i -D webpack webpack-cli
 ```
 
-### 3. webpack-dev-server をインストールする
+### 2-3. webpack-dev-server をインストールする
 
 これをインストールすることでローカルで保存した際に自動的にリロードされるようになる
 
@@ -30,7 +52,7 @@ npm i -D webpack webpack-cli
 npm i -D webpack webpack-cli webpack-dev-server
 ```
 
-### 4. package.json の scripts を編集しておく
+### 2-4. package.json の scripts を編集しておく
 
 ```json
 "scripts": {
@@ -39,7 +61,7 @@ npm i -D webpack webpack-cli webpack-dev-server
 },
 ```
 
-#### 5. html と src ファイルを作成する
+#### 2-5. html と src ファイルを作成する
 
 ```dos
 + {project}
